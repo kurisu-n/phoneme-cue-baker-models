@@ -1,0 +1,4 @@
+﻿# Release-asset binaries are uploaded via `gh release upload`, never committed.
+*.onnx
+*.bin
+*.safetensors
