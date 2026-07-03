@@ -1,23 +1,28 @@
 # phoneme-cue-baker-models
 
 Public asset-only repo hosting model release assets consumed by the FaceCue
-PhonemeCue baker (a Unity Editor extension). Each release tag is a recognizer
-model bundle (`model.onnx` + `vocab.json`). The Setup wizard inside Unity
+PhonemeCue baker (a Unity Editor extension). Each release tag is a model pack —
+a phoneme recognizer, the ASR transcript generator, or the TTS voice
+synthesizer — shipped as one or more files. The Setup wizard inside Unity
 downloads + SHA256-verifies these assets on demand.
 
 ## Releases
 
-| Tag | Recognizer | Upstream model | License |
+| Tag | Pack | Upstream model | License |
 | --- | --- | --- | --- |
 | `v0.1.0` | Multilingual Transcript Decoder (lv60espeak) | `facebook/wav2vec2-lv-60-espeak-cv-ft` | Apache-2.0 |
 | `v0.2.0` | English Free Decoder (Charsiu) | `charsiu/en_w2v2_fc_10ms` | MIT |
 | `v0.3.0` | Mandarin Chinese Free Decoder (Charsiu) | `charsiu/zh_xlsr_fc_10ms` | MIT |
 | `v0.4.0` | Japanese Free Decoder | `prj-beatrice/japanese-hubert-base-phoneme-ctc-v4` | Apache-2.0 |
 | `v0.5.0` | Korean Free Decoder (slplab) | `slplab/wav2vec2-xls-r-300m_phone-mfa_korean` | Apache-2.0 |
+| `v1.0` | TTS Voice Synthesis (`tts_v1`) + optional Hebrew diacritizer (`tts_he_v1`) | see `NOTICE.md` | see `NOTICE.md` |
 
-Each `model.onnx` is an ONNX format conversion of the upstream weights (format
-only; weights unchanged). See `NOTICE.md` for full per-model attribution and
-`LICENSE-MIT.txt` / `LICENSE-Apache-2.0.txt` for the license texts.
+Additional transcript-decoder releases (the ASR transcript generator, `v0.6`–`v0.9`)
+are on the [Releases](../../releases) page. Each model is an ONNX format
+conversion of the upstream weights (format only; weights unchanged), and a pack
+may ship as multiple files (see the manifest). See `NOTICE.md` for full
+per-model attribution and `LICENSE-MIT.txt` / `LICENSE-Apache-2.0.txt` for the
+license texts.
 
 ## What is this?
 
