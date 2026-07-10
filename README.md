@@ -16,6 +16,7 @@ downloads + SHA256-verifies these assets on demand.
 | `v0.4.0` | Japanese Free Decoder | `prj-beatrice/japanese-hubert-base-phoneme-ctc-v4` | Apache-2.0 |
 | `v0.5.0` | Korean Free Decoder (slplab) | `slplab/wav2vec2-xls-r-300m_phone-mfa_korean` | Apache-2.0 |
 | `v1.0` | TTS Voice Synthesis (`tts_v1`) + optional Hebrew diacritizer (`tts_he_v1`) | see `NOTICE.md` | see `NOTICE.md` |
+| `v1.1.0` | Speech Enhancement (Super-Resolution 48k, `enhance_v1`) | `alibabasglab/MossFormer2_SR_48K` | Apache-2.0 |
 
 Additional transcript-decoder releases (the ASR transcript generator, `v0.6`–`v0.9`)
 are on the [Releases](../../releases) page. Each model is an ONNX format

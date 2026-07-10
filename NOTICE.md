@@ -55,3 +55,14 @@ Full license texts are in `LICENSE-MIT.txt` and `LICENSE-Apache-2.0.txt`.
   https://huggingface.co/slplab/wav2vec2-xls-r-300m_phone-mfa_korean
 - License: Apache-2.0  (see `LICENSE-Apache-2.0.txt`)
 - Copyright (c) SLPlab (Speech and Language Processing Laboratory)
+
+## v1.1.0 - Speech Enhancement (Super-Resolution 48k)
+
+- ONNX re-export of `alibabasglab/MossFormer2_SR_48K`
+  https://huggingface.co/alibabasglab/MossFormer2_SR_48K
+  from the ClearerVoice-Studio project, https://github.com/modelscope/ClearerVoice-Studio
+  (the super-resolution transformer and its HiFi-GAN vocoder folded into one
+  waveform-to-waveform graph, mel front-end included; both upstream checkpoints,
+  weights unchanged)
+- License: Apache-2.0  (see `LICENSE-Apache-2.0.txt`)
+- Copyright (c) Alibaba Group (the ClearerVoice-Studio authors)
