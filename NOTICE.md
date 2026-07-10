@@ -56,7 +56,7 @@ Full license texts are in `LICENSE-MIT.txt` and `LICENSE-Apache-2.0.txt`.
 - License: Apache-2.0  (see `LICENSE-Apache-2.0.txt`)
 - Copyright (c) SLPlab (Speech and Language Processing Laboratory)
 
-## v1.1.0 - Speech Enhancement (Super-Resolution 48k)
+## v1.1.0 - Voice Synthesis Changer Add-on (Speech Super-Resolution 48k)
 
 - ONNX re-export of `alibabasglab/MossFormer2_SR_48K`
   https://huggingface.co/alibabasglab/MossFormer2_SR_48K
