@@ -66,3 +66,20 @@ Full license texts are in `LICENSE-MIT.txt` and `LICENSE-Apache-2.0.txt`.
   weights unchanged)
 - License: Apache-2.0  (see `LICENSE-Apache-2.0.txt`)
 - Copyright (c) Alibaba Group (the ClearerVoice-Studio authors)
+
+## v1.4.0 - Voice Synthesis vocoder update (tts_v1)
+
+- `hift_vocoder_v1.4.0.onnx`: ONNX export of the S3Gen HiFT vocoder from
+  Resemble AI's Chatterbox, https://github.com/resemble-ai/chatterbox
+  (weights unchanged)
+- Modified file: the two random-number operations in the vocoder's sine
+  source (the harmonics' start phases and the noise bed) are removed and
+  exposed as graph inputs (`sine_phase`, `sine_noise`), so the caller supplies
+  them. The rest of the graph is unchanged.
+- License: MIT  (see `LICENSE-MIT.txt`), Copyright (c) 2025 Resemble AI
+- The vocoder code is adapted from CosyVoice,
+  https://github.com/FunAudioLLM/CosyVoice, Apache-2.0  (see
+  `LICENSE-Apache-2.0.txt`), Copyright (c) 2024 Alibaba Inc (authors:
+  Xiang Lyu, Kai Hu)
+- Used by FaceCue 1.0.2 and later in place of the `v1.0` `hift_vocoder.onnx`,
+  which earlier versions keep using.

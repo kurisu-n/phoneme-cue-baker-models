@@ -18,6 +18,7 @@ downloads + SHA256-verifies these assets on demand.
 | `v0.5.0` | Korean Free Decoder (slplab) | `slplab/wav2vec2-xls-r-300m_phone-mfa_korean` | Apache-2.0 |
 | `v1.0` | Voice Synthesis (`tts_v1`) + Hebrew Add-on (`tts_he_v1`) | see `NOTICE.md` | see `NOTICE.md` |
 | `v1.1.0` | Voice Synthesis - Changer Add-on (`enhance_v1`) | `alibabasglab/MossFormer2_SR_48K` | Apache-2.0 |
+| `v1.4.0` | Voice Synthesis vocoder update (`tts_v1`, FaceCue 1.0.2 and later) | `resemble-ai/chatterbox` (S3Gen HiFT vocoder) | MIT + Apache-2.0, see `NOTICE.md` |
 
 Additional transcript-decoder releases (the ASR transcript generator, `v0.6`–`v0.9`)
 are on the [Releases](../../releases) page. Each model is an ONNX format
